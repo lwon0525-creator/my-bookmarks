@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111827">
+<title>My Bookmark Dashboard</title>
+<style>
+*{box-sizing:border-box} body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans KR",Arial,sans-serif;background:#f5f7fb;color:#111827}
+.wrap{max-width:1180px;margin:auto;padding:28px 18px 60px}
+.hero{background:#111827;color:white;border-radius:24px;padding:28px;box-shadow:0 12px 32px rgba(0,0,0,.12)}
+.hero h1{margin:0 0 7px;font-size:28px} .hero p{margin:0;color:#cbd5e1;font-size:14px}
+.search{width:100%;margin-top:20px;padding:15px 17px;border:0;border-radius:14px;font-size:16px;outline:none}
+.filters{display:flex;gap:8px;overflow:auto;padding:18px 2px 10px;scrollbar-width:none}
+.filter{white-space:nowrap;border:1px solid #dbe1ea;background:white;padding:9px 13px;border-radius:999px;font-weight:700;cursor:pointer}
+.filter.active{background:#111827;color:white;border-color:#111827}
+.count{font-size:13px;color:#64748b;margin:5px 3px 12px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.card{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit;background:white;border:1px solid #e7ebf0;border-radius:16px;padding:14px;min-height:76px;box-shadow:0 3px 12px rgba(15,23,42,.04);transition:.15s}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(15,23,42,.09)}
+.favicon{width:42px;height:42px;min-width:42px;border-radius:12px;background:#eef2f7;display:grid;place-items:center;font-weight:800;font-size:17px}
+.ct{min-width:0;flex:1} .title{font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.meta{font-size:11px;color:#94a3b8;margin-top:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.arrow{color:#94a3b8} .empty{display:none;text-align:center;color:#64748b;padding:50px}
+.footer{text-align:center;color:#94a3b8;font-size:12px;margin-top:30px}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.wrap{padding:14px 12px 40px}.hero{padding:22px 18px;border-radius:20px}.hero h1{font-size:23px}.grid{grid-template-columns:1fr}.card{min-height:70px}}
+</style>
+</head>
+<body><main class="wrap">
+<section class="hero"><h1>🔖 My Bookmarks</h1>
+<p>회사 PC 북마크를 모바일에서도 빠르게 · 총 59개</p>
+<input id="q" class="search" placeholder="사이트 이름이나 폴더를 검색하세요" autocomplete="off">
+</section>
+<div class="filters"><button class="filter active" data-cat="all">전체</button><button class="filter" data-cat="블로그·콘텐츠">블로그·콘텐츠</button><button class="filter" data-cat="뉴스·정보">뉴스·정보</button><button class="filter" data-cat="기타">기타</button></div>
+<div id="count" class="count"></div>
+<section id="grid" class="grid"><a class="card" href="https://blog.naver.com/calmwaves" target="_blank" rel="noopener"
+ data-title="시간으로부터의 자유"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">시</div>
+ <div class="ct"><div class="title">시간으로부터의 자유</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/zenwolf" target="_blank" rel="noopener"
+ data-title="쏘쟁"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">쏘</div>
+ <div class="ct"><div class="title">쏘쟁</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://www.ttimes.co.kr/" target="_blank" rel="noopener"
+ data-title="티타임즈"
+ data-category="뉴스·정보"
+ data-folder="">
+ <div class="favicon">티</div>
+ <div class="ct"><div class="title">티타임즈</div>
+ <div class="meta">뉴스·정보</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/audi72" target="_blank" rel="noopener"
+ data-title="트루카피"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">트</div>
+ <div class="ct"><div class="title">트루카피</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/dachi-daddy" target="_blank" rel="noopener"
+ data-title="대치대디"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">대</div>
+ <div class="ct"><div class="title">대치대디</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/myouth35" target="_blank" rel="noopener"
+ data-title="망둥이"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">망</div>
+ <div class="ct"><div class="title">망둥이</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/PostList.naver?blogId=raniong&amp;tab=1" target="_blank" rel="noopener"
+ data-title="라니옹"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">라</div>
+ <div class="ct"><div class="title">라니옹</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/jikolp78" target="_blank" rel="noopener"
+ data-title="옥동자"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">옥</div>
+ <div class="ct"><div class="title">옥동자</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/ranto28" target="_blank" rel="noopener"
+ data-title="메르"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">메</div>
+ <div class="ct"><div class="title">메르</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/acehigh3_2" target="_blank" rel="noopener"
+ data-title="초보교수"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">초</div>
+ <div class="ct"><div class="title">초보교수</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/PostList.naver?blogId=goldenmore_&amp;categoryNo=0&amp;listStyle=post&amp;tab=1" target="_blank" rel="noopener"
+ data-title="너 자산을 알라"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">너</div>
+ <div class="ct"><div class="title">너 자산을 알라</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/xpfkwh56" target="_blank" rel="noopener"
+ data-title="98년생"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">9</div>
+ <div class="ct"><div class="title">98년생</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/ondal0404" target="_blank" rel="noopener"
+ data-title="얼티메이텀"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">얼</div>
+ <div class="ct"><div class="title">얼티메이텀</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/wattari2" target="_blank" rel="noopener"
+ data-title="따리"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">따</div>
+ <div class="ct"><div class="title">따리</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/PostList.naver?blogId=anordinarydad&amp;tab=1" target="_blank" rel="noopener"
+ data-title="uq"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">U</div>
+ <div class="ct"><div class="title">UQ</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/PostList.naver?blogId=ihappy0304&amp;tab=1" target="_blank" rel="noopener"
+ data-title="숙주나물"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">숙</div>
+ <div class="ct"><div class="title">숙주나물</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/ams7899" target="_blank" rel="noopener"
+ data-title="투자 오아시스"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">투</div>
+ <div class="ct"><div class="title">투자 오아시스</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/penguin0805" target="_blank" rel="noopener"
+ data-title="자본주의"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">자</div>
+ <div class="ct"><div class="title">자본주의</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/seongsu-az?tab=1" target="_blank" rel="noopener"
+ data-title="성수동아저씨"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">성</div>
+ <div class="ct"><div class="title">성수동아저씨</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/PostList.naver?blogId=hwasikyuljeon&amp;tab=1" target="_blank" rel="noopener"
+ data-title="인문학자"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">인</div>
+ <div class="ct"><div class="title">인문학자</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/bambooinvesting" target="_blank" rel="noopener"
+ data-title="내 언어의 한계"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">내</div>
+ <div class="ct"><div class="title">내 언어의 한계</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/doctordk" target="_blank" rel="noopener"
+ data-title="군포금융치료센터"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">군</div>
+ <div class="ct"><div class="title">군포금융치료센터</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/robin324" target="_blank" rel="noopener"
+ data-title="리치로드"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">리</div>
+ <div class="ct"><div class="title">리치로드</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/PostList.naver?blogId=martin332&amp;tab=1" target="_blank" rel="noopener"
+ data-title="candl"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">C</div>
+ <div class="ct"><div class="title">Candl</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/gaunyu" target="_blank" rel="noopener"
+ data-title="낙민동 추노"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">낙</div>
+ <div class="ct"><div class="title">낙민동 추노</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/PostList.naver?blogId=nohappy0&amp;tab=1" target="_blank" rel="noopener"
+ data-title="상해에서"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">상</div>
+ <div class="ct"><div class="title">상해에서</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/bizucafe/224287982803" target="_blank" rel="noopener"
+ data-title="월드모델 : 네이버 블로그"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">월</div>
+ <div class="ct"><div class="title">월드모델 : 네이버 블로그</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/psung6" target="_blank" rel="noopener"
+ data-title="월급쟁이 루지"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">월</div>
+ <div class="ct"><div class="title">월급쟁이 루지</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/PostList.naver?blogId=zest258&amp;tab=1" target="_blank" rel="noopener"
+ data-title="시간투자"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">시</div>
+ <div class="ct"><div class="title">시간투자</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/gentlenavy" target="_blank" rel="noopener"
+ data-title="젠네"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">젠</div>
+ <div class="ct"><div class="title">젠네</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/shin0503988" target="_blank" rel="noopener"
+ data-title="신사람"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">신</div>
+ <div class="ct"><div class="title">신사람</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/goobbam?tab=1" target="_blank" rel="noopener"
+ data-title="구빰"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">구</div>
+ <div class="ct"><div class="title">구빰</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/quincy312" target="_blank" rel="noopener"
+ data-title="적당히 잘 살고"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">적</div>
+ <div class="ct"><div class="title">적당히 잘 살고</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/911y" target="_blank" rel="noopener"
+ data-title="돌묵선생"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">돌</div>
+ <div class="ct"><div class="title">돌묵선생</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/gohigh_realestate" target="_blank" rel="noopener"
+ data-title="고하이"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">고</div>
+ <div class="ct"><div class="title">고하이</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/feathers_mcgraw" target="_blank" rel="noopener"
+ data-title="페더씨의 아티클"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">페</div>
+ <div class="ct"><div class="title">페더씨의 아티클</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/udaro" target="_blank" rel="noopener"
+ data-title="유다로"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">유</div>
+ <div class="ct"><div class="title">유다로</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/marbin1982" target="_blank" rel="noopener"
+ data-title="닥터마빈"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">닥</div>
+ <div class="ct"><div class="title">닥터마빈</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/jjandol_?tab=1" target="_blank" rel="noopener"
+ data-title="짠돌이"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">짠</div>
+ <div class="ct"><div class="title">짠돌이</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/richyun0108?tab=1" target="_blank" rel="noopener"
+ data-title="작은투자"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">작</div>
+ <div class="ct"><div class="title">작은투자</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/cy2863?tab=1" target="_blank" rel="noopener"
+ data-title="습관"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">습</div>
+ <div class="ct"><div class="title">습관</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/rwwrhappy?tab=1" target="_blank" rel="noopener"
+ data-title="지금"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">지</div>
+ <div class="ct"><div class="title">지금</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/pillion21" target="_blank" rel="noopener"
+ data-title="알바트로스"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">알</div>
+ <div class="ct"><div class="title">알바트로스</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/tosoha1" target="_blank" rel="noopener"
+ data-title="이것 또한 지나가리라"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">이</div>
+ <div class="ct"><div class="title">이것 또한 지나가리라</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://jaegebal.com/" target="_blank" rel="noopener"
+ data-title="재개발닷컴"
+ data-category="기타"
+ data-folder="">
+ <div class="favicon">재</div>
+ <div class="ct"><div class="title">재개발닷컴</div>
+ <div class="meta">기타</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://mosobamboocompany.github.io/korea-export-dashboard/" target="_blank" rel="noopener"
+ data-title="한국 수출 산업 월별 트렌드 대시보드"
+ data-category="기타"
+ data-folder="">
+ <div class="favicon">한</div>
+ <div class="ct"><div class="title">한국 수출 산업 월별 트렌드 대시보드</div>
+ <div class="meta">기타</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/PostList.naver?blogId=quantum_edge&amp;tab=1" target="_blank" rel="noopener"
+ data-title="그러면서 투자하렵니까?"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">그</div>
+ <div class="ct"><div class="title">그러면서 투자하렵니까?</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://kospilab.com/" target="_blank" rel="noopener"
+ data-title="코스피랩 — 국내주식 시세 비교 대시보드"
+ data-category="기타"
+ data-folder="">
+ <div class="favicon">코</div>
+ <div class="ct"><div class="title">코스피랩 — 국내주식 시세 비교 대시보드</div>
+ <div class="meta">기타</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://www.thebrink.co.kr/channel/feathersmacro?utm_source=copy_link&amp;utm_medium=social_share&amp;utm_campaign=channel_share&amp;channel_id=feathersmacro" target="_blank" rel="noopener"
+ data-title="페더씨의 기만채널 | brink"
+ data-category="기타"
+ data-folder="">
+ <div class="favicon">페</div>
+ <div class="ct"><div class="title">페더씨의 기만채널 | BrinK</div>
+ <div class="meta">기타</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://m.blog.naver.com/PostList.naver?blogId=skyrocket_jake&amp;categoryNo=0&amp;listStyle=post&amp;tab=1&amp;trackingCode=blog_comment" target="_blank" rel="noopener"
+ data-title="g&#x27; day"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">G</div>
+ <div class="ct"><div class="title">G&#x27; day</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/bymin0418" target="_blank" rel="noopener"
+ data-title="민이군의 기록의 공간 : 네이버 블로그"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">민</div>
+ <div class="ct"><div class="title">민이군의 기록의 공간 : 네이버 블로그</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/umstar81" target="_blank" rel="noopener"
+ data-title="움훼훼의 얼씨구 절씨구 밥타령! : 네이버 블로그"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">움</div>
+ <div class="ct"><div class="title">움훼훼의 얼씨구 절씨구 밥타령! : 네이버 블로그</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/gypsyone" target="_blank" rel="noopener"
+ data-title="세콰노의 머거머거 : 네이버 블로그"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">세</div>
+ <div class="ct"><div class="title">세콰노의 머거머거 : 네이버 블로그</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/sweetmocha77" target="_blank" rel="noopener"
+ data-title="스윗모카의 foodie life~ : 네이버 블로그"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">스</div>
+ <div class="ct"><div class="title">스윗모카의 Foodie Life~ : 네이버 블로그</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/mardukas" target="_blank" rel="noopener"
+ data-title="먹자, 마시자, 놀러 다니자 : 네이버 블로그"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">먹</div>
+ <div class="ct"><div class="title">먹자, 마시자, 놀러 다니자 : 네이버 블로그</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/ppassong" target="_blank" rel="noopener"
+ data-title="빠숑의 세상 답사기 : 네이버 블로그"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">빠</div>
+ <div class="ct"><div class="title">빠숑의 세상 답사기 : 네이버 블로그</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/ssaurajin7/220549973948" target="_blank" rel="noopener"
+ data-title="부동산 투자시 절대 실패하지 않는 공식 : 네이버 블로그"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">부</div>
+ <div class="ct"><div class="title">부동산 투자시 절대 실패하지 않는 공식 : 네이버 블로그</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/alicehuh2k" target="_blank" rel="noopener"
+ data-title="행복 부동산 투자 앨리스허 : 네이버 블로그"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">행</div>
+ <div class="ct"><div class="title">행복 부동산 투자 앨리스허 : 네이버 블로그</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a>
+<a class="card" href="https://blog.naver.com/kizaki56/224162079124" target="_blank" rel="noopener"
+ data-title="강남구청역 맛집 추천 호루몬규상 야끼니꾸 핫플.. : 네이버블로그"
+ data-category="블로그·콘텐츠"
+ data-folder="">
+ <div class="favicon">강</div>
+ <div class="ct"><div class="title">강남구청역 맛집 추천 호루몬규상 야끼니꾸 핫플.. : 네이버블로그</div>
+ <div class="meta">블로그·콘텐츠</div></div>
+ <div class="arrow">↗</div>
+</a></section>
+<div id="empty" class="empty">검색 결과가 없습니다.</div>
+<div class="footer">Chrome 북마크 기반 개인 링크 대시보드 · 2026.10.02</div>
+</main>
+<script>
+const q=document.getElementById('q'), cards=[...document.querySelectorAll('.card')], filters=[...document.querySelectorAll('.filter')];
+let cat='all';
+function render(){
+ const s=q.value.trim().toLowerCase(); let n=0;
+ cards.forEach(c=>{const okCat=cat==='all'||c.dataset.category===cat;
+ const hay=(c.dataset.title+' '+c.dataset.folder+' '+c.href).toLowerCase();
+ const ok=okCat && (!s||hay.includes(s)); c.style.display=ok?'flex':'none'; if(ok)n++;});
+ document.getElementById('count').textContent=`${n}개 표시`;
+ document.getElementById('empty').style.display=n?'none':'block';
+}
+q.addEventListener('input',render);
+filters.forEach(b=>b.addEventListener('click',()=>{filters.forEach(x=>x.classList.remove('active'));b.classList.add('active');cat=b.dataset.cat;render();}));
+render();
+</script></body></html>
