@@ -2,6 +2,7 @@
   "calmwaves": {
     "blogTitle": "시간으로부터의 자유",
     "blogUrl": "https://blog.naver.com/calmwaves",
+    "category": "블로그·콘텐츠",
     "postTitle": "소유와 선택의 자유",
     "postUrl": "https://blog.naver.com/calmwaves/224424535916?fromRss=true&trackingCode=rss",
     "pubDate": "2026-09-28T10:37:48+09:00",
@@ -10,6 +11,7 @@
   "zenwolf": {
     "blogTitle": "쏘쟁",
     "blogUrl": "https://blog.naver.com/zenwolf",
+    "category": "블로그·콘텐츠",
     "postTitle": "수도권 주택 상승을 최소 2032년까지로 보시군요",
     "postUrl": "https://blog.naver.com/zenwolf/224419830957?fromRss=true&trackingCode=rss",
     "pubDate": "2026-09-22T14:32:25+09:00",
@@ -18,9 +20,386 @@
   "audi72": {
     "blogTitle": "트루카피",
     "blogUrl": "https://blog.naver.com/audi72",
+    "category": "블로그·콘텐츠",
     "postTitle": "추석을 앞두고 후배와 나눈 요즘 시장 이야기",
     "postUrl": "https://blog.naver.com/audi72/224428200840?fromRss=true&trackingCode=rss",
     "pubDate": "2026-10-01T13:45:30+09:00",
+    "ok": true
+  },
+  "dachi-daddy": {
+    "blogTitle": "대치대디",
+    "blogUrl": "https://blog.naver.com/dachi-daddy",
+    "category": "블로그·콘텐츠",
+    "postTitle": "블로그 유튜브 잠정 은퇴",
+    "postUrl": "https://blog.naver.com/dachi-daddy/224409699240?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-09-12T23:17:40+09:00",
+    "ok": true
+  },
+  "myouth35": {
+    "blogTitle": "망둥이",
+    "blogUrl": "https://blog.naver.com/myouth35",
+    "category": "블로그·콘텐츠",
+    "postTitle": "요즘 구글에도 밀렸다는 네이버 상황",
+    "postUrl": "https://blog.naver.com/myouth35/224423651382?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T10:00:00+09:00",
+    "ok": true
+  },
+  "PostList.naver": {
+    "blogTitle": "G' day",
+    "blogUrl": "https://m.blog.naver.com/PostList.naver?blogId=skyrocket_jake&categoryNo=0&listStyle=post&tab=1&trackingCode=blog_comment",
+    "category": "블로그·콘텐츠",
+    "ok": false,
+    "error": "RSS item 없음"
+  },
+  "jikolp78": {
+    "blogTitle": "옥동자",
+    "blogUrl": "https://blog.naver.com/jikolp78",
+    "category": "블로그·콘텐츠",
+    "postTitle": "<이번주 네프콘> 내가 부업하면서 포기한 것들 등",
+    "postUrl": "https://blog.naver.com/jikolp78/224429017488?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T07:52:05+09:00",
+    "ok": true
+  },
+  "ranto28": {
+    "blogTitle": "메르",
+    "blogUrl": "https://blog.naver.com/ranto28",
+    "category": "블로그·콘텐츠",
+    "postTitle": "연준, 10월에는 금리인상 하지 않겠다?",
+    "postUrl": "https://blog.naver.com/ranto28/224428978052?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T07:20:00+09:00",
+    "ok": true
+  },
+  "acehigh3_2": {
+    "blogTitle": "초보교수",
+    "blogUrl": "https://blog.naver.com/acehigh3_2",
+    "category": "블로그·콘텐츠",
+    "postTitle": "유튜브 복귀 영상 조회수 1만 달성!!!",
+    "postUrl": "https://blog.naver.com/acehigh3_2/224408654865?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-09-11T20:07:51+09:00",
+    "ok": true
+  },
+  "xpfkwh56": {
+    "blogTitle": "98년생",
+    "blogUrl": "https://blog.naver.com/xpfkwh56",
+    "category": "블로그·콘텐츠",
+    "postTitle": "좌충우돌 클로드의 유쾌한 대모험",
+    "postUrl": "https://blog.naver.com/xpfkwh56/224428905740?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T02:45:20+09:00",
+    "ok": true
+  },
+  "ondal0404": {
+    "blogTitle": "얼티메이텀",
+    "blogUrl": "https://blog.naver.com/ondal0404",
+    "category": "블로그·콘텐츠",
+    "postTitle": "다주택자 마녀사냥이 결국 현재의 공급 부족 사태를 촉발시킨건 아닐까???",
+    "postUrl": "https://blog.naver.com/ondal0404/224428341373?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-01T15:43:32+09:00",
+    "ok": true
+  },
+  "wattari2": {
+    "blogTitle": "따리",
+    "blogUrl": "https://blog.naver.com/wattari2",
+    "category": "블로그·콘텐츠",
+    "postTitle": "[부동산에 미친 녀자] #4. 30년 인생 그래프 그리기(ft. 40대에 0원이 된다니?)",
+    "postUrl": "https://blog.naver.com/wattari2/224426338099?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-01T07:50:00+09:00",
+    "ok": true
+  },
+  "ams7899": {
+    "blogTitle": "투자 오아시스",
+    "blogUrl": "https://blog.naver.com/ams7899",
+    "category": "블로그·콘텐츠",
+    "postTitle": "대구텍 일본, IMC 절삭공구 가격 인상 예정",
+    "postUrl": "https://blog.naver.com/ams7899/224426433812?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-09-29T22:55:27+09:00",
+    "ok": true
+  },
+  "penguin0805": {
+    "blogTitle": "자본주의",
+    "blogUrl": "https://blog.naver.com/penguin0805",
+    "category": "블로그·콘텐츠",
+    "postTitle": "SCHD 배당금 받으셨슈?",
+    "postUrl": "https://blog.naver.com/penguin0805/224426979014?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-09-30T13:06:10+09:00",
+    "ok": true
+  },
+  "seongsu-az": {
+    "blogTitle": "성수동아저씨",
+    "blogUrl": "https://m.blog.naver.com/seongsu-az?tab=1",
+    "category": "블로그·콘텐츠",
+    "postTitle": "한강 덮개공원 대박 (feat. 압구정, 반포, 성수)",
+    "postUrl": "https://blog.naver.com/seongsu-az/224044713852?fromRss=true&trackingCode=rss",
+    "pubDate": "2025-10-17T18:09:21+09:00",
+    "ok": true
+  },
+  "bambooinvesting": {
+    "blogTitle": "내 언어의 한계",
+    "blogUrl": "https://blog.naver.com/bambooinvesting",
+    "category": "블로그·콘텐츠",
+    "postTitle": "쏠 쑤 있어, 11년 전 군은 묻지 않았다",
+    "postUrl": "https://blog.naver.com/bambooinvesting/224427551314?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-01T04:30:00+09:00",
+    "ok": true
+  },
+  "doctordk": {
+    "blogTitle": "군포금융치료센터",
+    "blogUrl": "https://blog.naver.com/doctordk",
+    "category": "블로그·콘텐츠",
+    "postTitle": "강력한 시장, 돈 너머에는 무엇이 있을까?",
+    "postUrl": "https://blog.naver.com/doctordk/224428541268?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-01T18:36:58+09:00",
+    "ok": true
+  },
+  "robin324": {
+    "blogTitle": "리치로드",
+    "blogUrl": "https://blog.naver.com/robin324",
+    "category": "블로그·콘텐츠",
+    "postTitle": "9월 운동 & 독서 기록",
+    "postUrl": "https://blog.naver.com/robin324/224428689078?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-01T21:33:51+09:00",
+    "ok": true
+  },
+  "gaunyu": {
+    "blogTitle": "낙민동 추노",
+    "blogUrl": "https://blog.naver.com/gaunyu",
+    "category": "블로그·콘텐츠",
+    "postTitle": "무라타 전기·광학·열 통합 CPO 로드맵 공개…AI 인터커넥트 패권 정조준",
+    "postUrl": "https://blog.naver.com/gaunyu/224429032716?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T09:20:00+09:00",
+    "ok": true
+  },
+  "bizucafe": {
+    "blogTitle": "월드모델 : 네이버 블로그",
+    "blogUrl": "https://blog.naver.com/bizucafe/224287982803",
+    "category": "블로그·콘텐츠",
+    "postTitle": "광개토 대왕릉비",
+    "postUrl": "https://blog.naver.com/bizucafe/224425332884?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-09-28T23:45:15+09:00",
+    "ok": true
+  },
+  "psung6": {
+    "blogTitle": "월급쟁이 루지",
+    "blogUrl": "https://blog.naver.com/psung6",
+    "category": "블로그·콘텐츠",
+    "postTitle": "전체 인생의 방향을 망치지 말자. ..",
+    "postUrl": "https://blog.naver.com/psung6/224428429845?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-01T16:53:37+09:00",
+    "ok": true
+  },
+  "gentlenavy": {
+    "blogTitle": "젠네",
+    "blogUrl": "https://blog.naver.com/gentlenavy",
+    "category": "블로그·콘텐츠",
+    "postTitle": "가을이 온다는 시그널이 떴다.  (생체 신호)",
+    "postUrl": "https://blog.naver.com/gentlenavy/224427949601?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T06:00:00+09:00",
+    "ok": true
+  },
+  "shin0503988": {
+    "blogTitle": "신사람",
+    "blogUrl": "https://blog.naver.com/shin0503988",
+    "category": "블로그·콘텐츠",
+    "postTitle": "목동 이야기",
+    "postUrl": "https://blog.naver.com/shin0503988/224420356223?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-09-22T23:42:43+09:00",
+    "ok": true
+  },
+  "goobbam": {
+    "blogTitle": "구빰",
+    "blogUrl": "https://m.blog.naver.com/goobbam?tab=1",
+    "category": "블로그·콘텐츠",
+    "postTitle": "26년 9월 금융 결산",
+    "postUrl": "https://blog.naver.com/goobbam/224427883157?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-01T08:41:41+09:00",
+    "ok": true
+  },
+  "quincy312": {
+    "blogTitle": "적당히 잘 살고",
+    "blogUrl": "https://blog.naver.com/quincy312",
+    "category": "블로그·콘텐츠",
+    "postTitle": "라오어 무한매수법으로 TQQQ를 할까 SOXL을 할까, 클로드를 활용한 백테스트 결과",
+    "postUrl": "https://blog.naver.com/quincy312/224429039316?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T08:27:32+09:00",
+    "ok": true
+  },
+  "911y": {
+    "blogTitle": "돌묵선생",
+    "blogUrl": "https://blog.naver.com/911y",
+    "category": "블로그·콘텐츠",
+    "postTitle": "파이프라인에 대한 고찰",
+    "postUrl": "https://blog.naver.com/911y/224428817081?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-01T23:58:47+09:00",
+    "ok": true
+  },
+  "gohigh_realestate": {
+    "blogTitle": "고하이",
+    "blogUrl": "https://blog.naver.com/gohigh_realestate",
+    "category": "블로그·콘텐츠",
+    "postTitle": "나는 100년 뒤를 생각하며 투자한다",
+    "postUrl": "https://blog.naver.com/gohigh_realestate/224429075523?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T09:16:38+09:00",
+    "ok": true
+  },
+  "feathers_mcgraw": {
+    "blogTitle": "페더씨의 아티클",
+    "blogUrl": "https://blog.naver.com/feathers_mcgraw",
+    "category": "블로그·콘텐츠",
+    "postTitle": "유튜브 개설 공지",
+    "postUrl": "https://blog.naver.com/feathers_mcgraw/224427287853?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-09-30T17:21:47+09:00",
+    "ok": true
+  },
+  "udaro": {
+    "blogTitle": "유다로",
+    "blogUrl": "https://blog.naver.com/udaro",
+    "category": "블로그·콘텐츠",
+    "postTitle": "개인적으로 추천하는 자금별 재개발 구역",
+    "postUrl": "https://blog.naver.com/udaro/224428628217?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-01T20:24:13+09:00",
+    "ok": true
+  },
+  "marbin1982": {
+    "blogTitle": "닥터마빈",
+    "blogUrl": "https://blog.naver.com/marbin1982",
+    "category": "블로그·콘텐츠",
+    "postTitle": "[자본시장 브리핑] 서울 집값 86주 상승, 역대 최장 외",
+    "postUrl": "https://blog.naver.com/marbin1982/224429030936?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T08:14:26+09:00",
+    "ok": true
+  },
+  "jjandol_": {
+    "blogTitle": "짠돌이",
+    "blogUrl": "https://m.blog.naver.com/jjandol_?tab=1",
+    "category": "블로그·콘텐츠",
+    "postTitle": "지금 적립을 멈추면 가장 크게 잃는 것",
+    "postUrl": "https://blog.naver.com/jjandol_/224428976109?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T06:20:55+09:00",
+    "ok": true
+  },
+  "richyun0108": {
+    "blogTitle": "작은투자",
+    "blogUrl": "https://m.blog.naver.com/richyun0108?tab=1",
+    "category": "블로그·콘텐츠",
+    "postTitle": "운동기록 9주차.",
+    "postUrl": "https://blog.naver.com/richyun0108/224424226523?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-09-27T23:46:07+09:00",
+    "ok": true
+  },
+  "cy2863": {
+    "blogTitle": "습관",
+    "blogUrl": "https://m.blog.naver.com/cy2863?tab=1",
+    "category": "블로그·콘텐츠",
+    "postTitle": "메모리, AI 데이터센터 실적 11배나 폭증",
+    "postUrl": "https://blog.naver.com/cy2863/224429051595?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T08:45:32+09:00",
+    "ok": true
+  },
+  "rwwrhappy": {
+    "blogTitle": "지금",
+    "blogUrl": "https://m.blog.naver.com/rwwrhappy?tab=1",
+    "category": "블로그·콘텐츠",
+    "postTitle": "내가 세상을 보는 걸까? 세상이 나를 만드는 걸까?",
+    "postUrl": "https://blog.naver.com/rwwrhappy/224428739543?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T07:00:00+09:00",
+    "ok": true
+  },
+  "pillion21": {
+    "blogTitle": "알바트로스",
+    "blogUrl": "https://blog.naver.com/pillion21",
+    "category": "블로그·콘텐츠",
+    "postTitle": "순서를 바꾸셔라.",
+    "postUrl": "https://blog.naver.com/pillion21/224426023663?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-09-29T15:45:13+09:00",
+    "ok": true
+  },
+  "tosoha1": {
+    "blogTitle": "이것 또한 지나가리라",
+    "blogUrl": "https://blog.naver.com/tosoha1",
+    "category": "블로그·콘텐츠",
+    "postTitle": "몇 개의 코멘트들 - 월마트, 코스트코의 k-beauty 언급",
+    "postUrl": "https://blog.naver.com/tosoha1/224425280557?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-09-29T17:30:00+09:00",
+    "ok": true
+  },
+  "bymin0418": {
+    "blogTitle": "민이군의 기록의 공간 : 네이버 블로그",
+    "blogUrl": "https://blog.naver.com/bymin0418",
+    "category": "맛집",
+    "postTitle": "청담 울프강 스테이크하우스 런치 코스 스테이크 후기",
+    "postUrl": "https://blog.naver.com/bymin0418/224429081475?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T09:30:00+09:00",
+    "ok": true
+  },
+  "umstar81": {
+    "blogTitle": "움훼훼의 얼씨구 절씨구 밥타령! : 네이버 블로그",
+    "blogUrl": "https://blog.naver.com/umstar81",
+    "category": "맛집",
+    "postTitle": "미국식 스테이크하우스 한남동 스미스 앤 월렌스키(Smith & Wollensky)",
+    "postUrl": "https://blog.naver.com/umstar81/224416776615?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-09-21T07:50:00+09:00",
+    "ok": true
+  },
+  "gypsyone": {
+    "blogTitle": "세콰노의 머거머거 : 네이버 블로그",
+    "blogUrl": "https://blog.naver.com/gypsyone",
+    "category": "맛집",
+    "postTitle": "선릉역 맛집 돈그리아 - 줄서는 스테이크목살, 항정살, 청어알소스",
+    "postUrl": "https://blog.naver.com/gypsyone/224428268213?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-01T14:44:17+09:00",
+    "ok": true
+  },
+  "sweetmocha77": {
+    "blogTitle": "스윗모카의 Foodie Life~ : 네이버 블로그",
+    "blogUrl": "https://blog.naver.com/sweetmocha77",
+    "category": "맛집",
+    "postTitle": "종각 르메이에르 | 쿠지라스토랑 광화문점 Ep.1 : 일본인들도 반해버린 아부라소바 라멘맛집",
+    "postUrl": "https://blog.naver.com/sweetmocha77/224426706909?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-09-30T08:52:38+09:00",
+    "ok": true
+  },
+  "mardukas": {
+    "blogTitle": "먹자, 마시자, 놀러 다니자 : 네이버 블로그",
+    "blogUrl": "https://blog.naver.com/mardukas",
+    "category": "맛집",
+    "postTitle": "[장털보설렁탕] 오금동 - 맛있는 국물, 아쉬운 건더기의 설렁탕",
+    "postUrl": "https://blog.naver.com/mardukas/224428373307?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T06:00:00+09:00",
+    "ok": true
+  },
+  "ppassong": {
+    "blogTitle": "빠숑의 세상 답사기 : 네이버 블로그",
+    "blogUrl": "https://blog.naver.com/ppassong",
+    "category": "맛집",
+    "postTitle": "강남 집값 내린다고 서민 삶이 나아지나요?",
+    "postUrl": "https://blog.naver.com/ppassong/224429018219?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T07:53:26+09:00",
+    "ok": true
+  },
+  "ssaurajin7": {
+    "blogTitle": "부동산 투자시 절대 실패하지 않는 공식 : 네이버 블로그",
+    "blogUrl": "https://blog.naver.com/ssaurajin7/220549973948",
+    "category": "맛집",
+    "postTitle": "3기 신도시, 택지지구 현황 및 주요 point를 밑줄로 정리해 보왔습니다.",
+    "postUrl": "https://blog.naver.com/ssaurajin7/221422435859?fromRss=true&trackingCode=rss",
+    "pubDate": "2018-12-19T12:01:07+09:00",
+    "ok": true
+  },
+  "alicehuh2k": {
+    "blogTitle": "행복 부동산 투자 앨리스허 : 네이버 블로그",
+    "blogUrl": "https://blog.naver.com/alicehuh2k",
+    "category": "맛집",
+    "postTitle": "나의 살던 고향은 펜스로 도배중....",
+    "postUrl": "https://blog.naver.com/alicehuh2k/224415412612?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-09-17T23:09:07+09:00",
+    "ok": true
+  },
+  "kizaki56": {
+    "blogTitle": "강남구청역 맛집 추천 호루몬규상 야끼니꾸 핫플.. : 네이버블로그",
+    "blogUrl": "https://blog.naver.com/kizaki56/224162079124",
+    "category": "맛집",
+    "postTitle": "프랑스 파리 여행 가볼만한곳 루브르 박물관 모나리자 비너스 세계3대 미술관",
+    "postUrl": "https://blog.naver.com/kizaki56/224425005230?fromRss=true&trackingCode=rss",
+    "pubDate": "2026-10-02T08:10:00+09:00",
     "ok": true
   }
 }
